@@ -1,0 +1,35 @@
+footer {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: lato-ita;
+  font-size: 15px;
+
+  .links ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .socials {
+    display: flex;
+    ul {
+      display: flex;
+      width: 78px;
+      justify-content: space-between;
+    }
+
+    img {
+      width: 19px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 10px;
+  }
+}
