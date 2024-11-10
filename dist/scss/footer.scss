@@ -1,11 +1,15 @@
 footer {
+  position: absolute;
+  bottom: 0;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
+  padding: 26px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: lato-ita;
   font-size: 15px;
+  z-index: 1;
 
   .links ul {
     display: flex;

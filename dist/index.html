@@ -7,6 +7,13 @@
     <title>Jungle Cook</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -14,16 +21,18 @@
   <body>
     <header>
       <div class="nav-container">
-        <div class="logo"><img src="./images/logo.svg" alt="jungle cook logo"></div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="jungle cook logo" />
+        </div>
         <nav class="nav">
           <ul class="nav--ul__one">
-            <li class="nav-link"><a id="home" href="#">Home</a></li>
+            <li class="nav-link"><a id="home" href="#home">Home</a></li>
             <li class="nav-link"><a id="browse" href="#">Browse</a></li>
             <li class="nav-link"><a id="create" href="#">Create</a></li>
             <li class="nav-link"><a id="recipe" href="#">Recipe</a></li>
           </ul>
           <ul class="nav--ul__two">
-            <li class="nav-link"><a id="login" href="#">Login</a></li>
+            <li class="nav-link"><a id="login" href="#login">Login</a></li>
           </ul>
           <div clickContainer></div>
         </nav>
@@ -31,44 +40,25 @@
       </div>
     </header>
 
-    <div id="app">
-      <div class="hero">
-        <div class="home">
-            <div class="circle-container">
-                <div class="small-circle">
-                    <p>Want to be a Jungle Cook? Go ahead and the kitchen is yours!</p>
-                </div>
-                <div class="big-circle">
-                    <h1>The Jungle Cook</h1>
-                    <p>
-                        The home to various 
-                        recipes of your choice. 
-                        Add your own recipe 
-                        today and fill the world 
-                        with joy!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="app"></div>
 
     <footer>
-        <div class="copy">Copyright © 2019 The Jungle Cook</div>
-        <div class="links">
-            <ul>
-                <li><a id="login" href="#">Login</a></li>
-                <li><a href="">Recipes by Category</a></li>
-                <li>Privacy and Copyright</li>
-                <li><a href="">Create Recipe</a></li>
-                <li><a href="">Your Recipes</a></li>
-            </ul>
-        </div>
-        <div class="socials">
-            <ul>
-                <li><img src="./images/facebook.svg" alt="facebook icon"></li>
-                <li><img src="./images/instagram.svg" alt="instagram icon"></li>
-            </ul>
-        </div>
+      <div class="copy">Copyright © 2019 The Jungle Cook</div>
+      <div class="links">
+        <ul>
+          <li><a id="login" href="#login">Login</a></li>
+          <li><a href="">Recipes by Category</a></li>
+          <li>Privacy and Copyright</li>
+          <li><a href="">Create Recipe</a></li>
+          <li><a href="">Your Recipes</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <ul>
+          <li><img src="./images/facebook.svg" alt="facebook icon" /></li>
+          <li><img src="./images/instagram.svg" alt="instagram icon" /></li>
+        </ul>
+      </div>
     </footer>
 
     <script src="lib/jquery-3.7.1.min.js"></script>
