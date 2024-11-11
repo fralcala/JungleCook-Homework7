@@ -311,3 +311,9 @@ footer .socials img {
 .loginPage input::placeholder {
   color: black;
 }
+
+@media (max-width: 768px) {
+  .loginPage {
+    flex-direction: column;
+  }
+}
