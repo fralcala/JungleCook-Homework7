@@ -2,9 +2,9 @@ import * as $ from "jquery";
 import { signUserUp, signUserOut, signUserin, changePage } from "./model";
 
 function initListeners() {
-  // login
+  // sign up
   console.log("init");
-  $("#submit").on("click", () => {
+  $("#signSubmit").on("click", () => {
     const firstName = $("#fName").val();
     const lastName = $("#lName").val();
     const email = $("#email").val();
@@ -17,10 +17,10 @@ function initListeners() {
     signUserOut();
   });
 
-  $("#siSubmit").on("click", () => {
-    let siEmail = $("#siEmail").val();
-    let siPassword = $("#siPassword").val();
-    signUserin(siEmail, siPassword);
+  $("#logSubmit").on("click", () => {
+    let logEmail = $("#logEmail").val();
+    let logPassword = $("#logPassword").val();
+    signUserin(logEmail, logPassword);
   });
 }
 
